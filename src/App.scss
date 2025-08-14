@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Homemade+Apple&family=Open+Sans&display=swap');
+
+
+.homemade-apple-regular {
+    font-family: "Homemade Apple", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dongle-regular {
+    font-family: "Dongle", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.open-sans {
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+  
+
+.App {
+    margin: 50px;
+    width: 100%;
+    display: flex;
+
+    h1 {
+        font-size: 3em;
+        margin-bottom: 0;
+    }
+
+    h2 {
+        font-size: 2.8em;
+        margin-top: -50px;
+        padding-left: 13px;
+    }
+
+    p {
+        font-size: 2em;
+    }
+
+    .box {
+        width: 1040px;
+        position: relative;;
+    }
+
+    .skills {
+        ul {
+            list-style-type: none;
+            display: flex;
+
+            li {
+                @extend .open-sans;
+                margin-right: 50px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                    margin-bottom: 15px;
+                }
+
+            }
+        }
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        margin: 100px 50px;
+
+        button {
+            margin-bottom: 25px;
+            @extend .homemade-apple-regular;
+            font-size: 1.5em;
+        }
+    }
+
+    .active-button {
+        text-decoration: underline;
+    }
+
+    .fade-in-section {
+        opacity: 0;
+        transform: translateY(20vh);
+        visibility: hidden;
+        transition: opacity 1200ms ease-out, transform 600ms ease-out,
+        visibility 1200ms ease-out;
+        will-change: opacity, transform, visibility;
+        position: absolute;
+      }
+
+      .fade-in-section.is-visible {
+        opacity: 1;
+        transform: none;
+        visibility: visible;
+      }
+
+}
