@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle&family=Homemade+Apple&family=Open+Sans&display=swap');
 
+* {
+    box-sizing: inherit;
+    -webkit-font-smoothing: antialiased;
+}
 
 .homemade-apple-regular {
     font-family: "Homemade Apple", serif;
@@ -53,12 +57,26 @@
         font-size: 2em;
     }
 
-    .box {
-        // width: 1040px;
-        // position: relative;
+    nav {
+        max-width: 600px;
+        margin: 0 auto;
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        li {
+            margin-bottom: 25px;
+            @extend .homemade-apple-regular;
+            font-size: 1.5em;
+            list-style-type: none;
+        }
     }
 
     .skills {
+        margin: 150px 0px;
         ul {
             list-style-type: none;
             display: flex;
@@ -80,22 +98,10 @@
         }
     }
 
-    .menu {
-        display: flex;
-        max-width: 600px;
-        margin: 0 auto;
-        justify-content: space-around;
-
-        button {
-            margin-bottom: 25px;
-            @extend .homemade-apple-regular;
-            font-size: 1.5em;
-        }
+    .contact {
+        margin: 150px 0px;
     }
 
-    .active-button {
-        text-decoration: underline;
-    }
 
 
 

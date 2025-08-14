@@ -20,11 +20,13 @@ function App() {
                     <h2 className="dongle-regular">web developer</h2>
                 </div>
 
-                <div className="menu">
-                    <Link to="section1" smooth={true} duration={500}>about</Link>
-                    <Link to="section2" smooth={true} duration={500}>skills</Link>
-                    <Link to="section3" smooth={true} duration={500}>contact</Link>
-                </div>
+                <nav>
+                    <ul>
+                        <li><Link to="section1" smooth={true} duration={500}>about</Link></li>
+                        <li><Link to="section2" smooth={true} duration={500}>skills</Link></li>
+                        <li><Link to="section3" smooth={true} duration={500}>contact</Link></li>
+                    </ul> 
+                </nav>
 
                 <div className="box">
 
@@ -36,7 +38,7 @@ function App() {
 
                     </Element>
 
-                    <Element name="section2">
+                    <Element name="section2" className="skills">
 
                         <h4 className="open-sans">Techncial Skills</h4>
                         <ul>
@@ -51,9 +53,13 @@ function App() {
                             <li><img src="logos/github-brands-solid.svg" alt="github logo"></img>GIT</li>
                         </ul>
 
+                        <p className="dongle-regular">I have also worked with helpful tools and APIs such as Algolia, Salesforce, Google Analytics & Tag Manager, Twilio, Mapbox, 
+                            Mailgun and many more.
+                        </p>
+
                     </Element>
 
-                    <Element name="section3">
+                    <Element name="section3" className="contact">
 
                         <h4 className="open-sans">Contact Me</h4>
                         <a href="mailto:jciarelli@gmail.com"><i className="fa fa-envelope-open-o"></i> Email Me</a>
