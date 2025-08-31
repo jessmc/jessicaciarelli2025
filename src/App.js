@@ -46,7 +46,7 @@ function App() {
 
                     <Element name="section2" className="skills">
 
-                        <h4 className="open-sans">techncial skills</h4>
+                        <h4 className="open-sans">technical skills</h4>
                         <ul>
                             <li><img src="logos/php-brands-solid.svg" alt="php logo"></img> PHP</li>
                             <li><img src="logos/js-brands-solid.svg" alt="javascript logo"></img>JavaScript</li>
